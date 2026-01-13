@@ -1,0 +1,28 @@
+body {margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    border: orange 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: #ddd 1px solid;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+article {
+    display: flex;
+
+}

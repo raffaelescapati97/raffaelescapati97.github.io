@@ -1,0 +1,73 @@
+div {
+    padding: 80px 20px;
+    margin: 0;
+
+}
+
+article {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+}
+
+#chisono {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#chisono p {
+    padding: 10px;
+    margin: 0 20px;
+    width: 50%;
+}
+
+#chisono img {
+    width: 49%;
+    height: auto;
+    
+}
+
+#progetti p {
+    margin-top: 0;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+#progetti img {
+    margin-top: 0;
+    width: 49%;
+    height: auto;
+}
+
+#passioni p {
+    display: inline-block;
+    width: 50%;
+    margin: 0 20px;
+}
+
+#passioni img {
+    width: 49%;
+    height: auto;
+    float: left;
+}
+
+#hobby p {
+    display: inline-block;
+    width: 50%;
+    margin: 0 20px;
+}
+
+
+#hobby img {
+    width: 49%;
+    height: auto;
+    float: right;
+}
+
