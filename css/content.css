@@ -5,10 +5,8 @@ div {
 }
 
 article {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: fit-content;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -18,15 +16,16 @@ h2 {
 
 
 #chisono p {
-    padding: 10px;
     margin: 0 20px;
     width: 50%;
-    float: right;
+    height: fit-content;
 }
 
 #chisono img {
+    margin: 0 20px;
     width: 50%;
     height: fit-content;
+    max-inline-size: 400px;
     
 }
 
@@ -34,33 +33,42 @@ h2 {
     margin: 0 20px;
     width: 50%;
     float: left;
+    height: fit-content;
 }
 
 #progetti img {
+    margin: 0 20px;
     width: 50%;
     height: fit-content;
+    max-inline-size: 400px;
 }
 
 #passioni p {
     width: 50%;
     margin: 0 20px;
     float: right;
+    height: fit-content;
 }
 
 #passioni img {
+    margin: 0 20px;
     width: 50%;
     height: fit-content;
+    max-inline-size: 400px;
 }
 
 #hobby p {
     width: 50%;
     margin: 0 20px;
     float: left;
+    height: fit-content;
 }
 
 
 #hobby img {
+    margin: 0 20px;
     width: 50%;
     height: fit-content;
+    max-inline-size: 400px;
 }
 
