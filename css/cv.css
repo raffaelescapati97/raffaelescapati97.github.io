@@ -3,7 +3,7 @@ h2 {margin-top: 80px;
     text-align: center;
 }
 
-    div {
+    section div {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -15,7 +15,8 @@ h2 {margin-top: 80px;
     }
 
     @media (min-width: 768px){
-        div {
+
+        section div {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -25,5 +26,7 @@ h2 {margin-top: 80px;
         div p{
             width: 100%;
         }
+
+
 
     }
