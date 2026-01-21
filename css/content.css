@@ -16,58 +16,51 @@ h2 {
     text-align: center;
 }
 
-#chisono {
-    display: flex;
-    justify-content: space-between;
-}
-
 
 #chisono p {
     padding: 10px;
     margin: 0 20px;
     width: 50%;
+    float: right;
 }
 
 #chisono img {
-    width: 49%;
-    height: auto;
+    width: 50%;
+    height: fit-content;
     
 }
 
 #progetti p {
-    margin-top: 0;
-    padding: 10px;
     margin: 0 20px;
-}
-
-#progetti img {
-    margin-top: 0;
-    width: 49%;
-    height: auto;
-}
-
-#passioni p {
-    display: inline-block;
     width: 50%;
-    margin: 0 20px;
-}
-
-#passioni img {
-    width: 49%;
-    height: auto;
     float: left;
 }
 
-#hobby p {
-    display: inline-block;
+#progetti img {
+    width: 50%;
+    height: fit-content;
+}
+
+#passioni p {
     width: 50%;
     margin: 0 20px;
+    float: right;
+}
+
+#passioni img {
+    width: 50%;
+    height: fit-content;
+}
+
+#hobby p {
+    width: 50%;
+    margin: 0 20px;
+    float: left;
 }
 
 
 #hobby img {
-    width: 49%;
-    height: auto;
-    float: right;
+    width: 50%;
+    height: fit-content;
 }
 
