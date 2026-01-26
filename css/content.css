@@ -1,74 +1,67 @@
 div {
-    padding: 80px 20px;
-    margin: 0;
-
+  padding: 80px 20px;
+  margin: 0;
 }
 
 article {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
-
-#chisono p {
-    margin: 0 20px;
-    width: 50%;
-    height: fit-content;
-}
-
+#chisono p,
 #chisono img {
-    margin: 0 20px;
-    width: 50%;
-    height: fit-content;
-    max-inline-size: 400px;
-    
+  margin: 0 20px;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#chisono img {
+  max-inline-size: 400px;
 }
 
-#progetti p {
-    margin: 0 20px;
-    width: 50%;
-    float: left;
-    height: fit-content;
-}
-
+#progetti p,
 #progetti img {
-    margin: 0 20px;
-    width: 50%;
-    height: fit-content;
-    max-inline-size: 400px;
+  margin: 0 20px;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#progetti p {
+  float: left;
+}
+#progetti img {
+  max-inline-size: 400px;
 }
 
-#passioni p {
-    width: 50%;
-    margin: 0 20px;
-    float: right;
-    height: fit-content;
-}
-
+#passioni p,
 #passioni img {
-    margin: 0 20px;
-    width: 50%;
-    height: fit-content;
-    max-inline-size: 400px;
+  margin: 0 20px;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#passioni p {
+  float: right;
+}
+#passioni img {
+  max-inline-size: 400px;
 }
 
-#hobby p {
-    width: 50%;
-    margin: 0 20px;
-    float: left;
-    height: fit-content;
-}
-
-
+#hobby p,
 #hobby img {
-    margin: 0 20px;
-    width: 50%;
-    height: fit-content;
-    max-inline-size: 400px;
+  margin: 0 20px;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-
+#hobby p {
+  float: left;
+}
+#hobby img {
+  max-inline-size: 400px;
+}/*# sourceMappingURL=content.css.map */

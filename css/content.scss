@@ -1,0 +1,78 @@
+div {
+  padding: 80px 20px;
+  margin: 0;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+}
+
+#chisono {
+  p,
+  img {
+    margin: 0 20px;
+    width: 50%;
+    height: fit-content;
+  }
+
+  img {
+    max-inline-size: 400px;
+  }
+}
+
+#progetti {
+  p,
+  img {
+    margin: 0 20px;
+    width: 50%;
+    height: fit-content;
+  }
+
+  p {
+    float: left;
+  }
+
+  img {
+    max-inline-size: 400px;
+  }
+}
+
+#passioni {
+  p,
+  img {
+    margin: 0 20px;
+    width: 50%;
+    height: fit-content;
+  }
+
+  p {
+    float: right;
+  }
+
+  img {
+    max-inline-size: 400px;
+  }
+}
+
+#hobby {
+  p,
+  img {
+    margin: 0 20px;
+    width: 50%;
+    height: fit-content;
+  }
+
+  p {
+    float: left;
+  }
+
+  img {
+    max-inline-size: 400px;
+  }
+}
