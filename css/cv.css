@@ -15,7 +15,7 @@ h2 {margin-top: 100px;
     }
 
     @media (min-width: 768px){
-
+        
         section div {
             display: flex;
             flex-direction: row;
@@ -26,7 +26,4 @@ h2 {margin-top: 100px;
         div p{
             width: 100%;
         }
-
-
-
     }
