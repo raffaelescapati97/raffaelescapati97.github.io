@@ -29,6 +29,7 @@ h1 a {
 
 h1 a:hover {
     color: #3d1f02;
+    text-decoration: none;
 }
 
 .menu {
