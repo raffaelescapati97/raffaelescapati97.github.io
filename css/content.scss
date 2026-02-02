@@ -3,11 +3,6 @@ div {
   margin: 0;
 }
 
-article {
-  display: flex;
-  justify-content: center;
-}
-
 h2 {
   display: block;
   text-align: center;
@@ -67,8 +62,7 @@ h2 {
     width: 50%;
     height: fit-content;
   }
-
-  p {
+    p {
     float: left;
   }
 
