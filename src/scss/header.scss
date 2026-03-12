@@ -5,6 +5,7 @@ header {
     width: 100%;
     top:0;
     background-color: chocolate;
+    z-index: 1000;
 }
 
 h1 {
@@ -128,6 +129,7 @@ h1 a:hover {
         float: right;
         padding: 10px 20px;
         align-items: center;
+        overflow: hidden;
     }
 
     .menu li {
@@ -142,4 +144,3 @@ h1 a:hover {
         border-radius: 5px;
     }
 }
-

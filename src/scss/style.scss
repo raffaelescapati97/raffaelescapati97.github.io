@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 80px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+    border: orange 2px solid;
+    border-radius: 10px;
+}
+
+p, form {
+    background-color: #f1f1f1;
+}
+
+.bordo-arancio {
+    border: orange 2px solid;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    p {
+        font-size: 14px;
+    }
+}

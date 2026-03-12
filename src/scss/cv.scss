@@ -1,0 +1,29 @@
+h2 {margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+    section div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 0;
+    }
+
+    @media (min-width: 768px){
+        
+        section div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+
+        div p{
+            width: 100%;
+        }
+    }
