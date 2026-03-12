@@ -7,3 +7,9 @@
 #content p {
   margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+  #content {
+    padding: 0 70px;
+  }
+}
