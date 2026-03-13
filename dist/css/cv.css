@@ -4,16 +4,16 @@ h2 {
     text-align: center;
 }
 
-        section div {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: 30px;
-        }
-
-        div p{
-            width: 100%;
-        }
+section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+}
+        
+div p {
+    width: 100%;
+}
 
 @media (max-width: 768px) {
 
