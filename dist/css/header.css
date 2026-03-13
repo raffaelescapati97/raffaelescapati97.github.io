@@ -23,7 +23,7 @@ h1 {
 h1 a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 28px;
     color: #000000;
     cursor: default;
     text-shadow: #000000 1px 1px 1px;
@@ -118,6 +118,10 @@ h1 a:hover {
 }
 
 @media (min-width: 768px) {
+
+    h1 a {
+        font-size: 32px;
+    }
 
     .menu-btn {
         display: none;
