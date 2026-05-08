@@ -1,5 +1,13 @@
-@use 'header';
-@use 'footer';
-@use 'style';
-@use 'cv';
-@use 'content';
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+@use "base/base";
+
+@use "layout/navbar";
+@use "layout/header";
+@use "layout/footer";
+
+@use "components/contact";
+
+@use "pages/home";
+@use "pages/cv";

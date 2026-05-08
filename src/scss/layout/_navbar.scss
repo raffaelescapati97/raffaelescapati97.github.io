@@ -1,0 +1,146 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.navbar {
+  @include glassmorphism;
+  padding: 1rem 0;
+  @include transition-standard;
+  
+  &__brand {
+    font-family: $font-title;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1a237e !important;
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+    
+    &__logo {
+      width: 2rem;
+      height: 2rem;
+      object-fit: contain;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked ~ .navbar__collapse {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      //display: block; // Keep for layout
+    }
+
+    &:checked ~ .navbar__toggler {
+      .navbar__toggler-icon {
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+          content: '\2715';
+          color: $color-primary;
+          font-size: 1.5rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  &__toggler {
+    display: none;
+    cursor: pointer;
+    border: 0.0625rem solid rgba($color-primary, 0.2);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    width: 3rem;
+    height: 2.5rem;
+
+    @include respond-to("large") {
+      @include flex-center;
+    }
+  }
+
+  &__toggler-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2863, 81, 181, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &__collapse {
+    display: flex;
+    align-items: center;
+
+    @include respond-to("large") {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-1rem);
+      @include transition-standard;
+      
+      width: 100%;
+      background: rgba($color-white, 0.98);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 2rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: none; // Initial hide
+      
+      .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: $spacing-sm;
+      }
+
+      .navbar__link {
+        color: $color-text !important;
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  // Update checkbox selector to handle display
+  &__checkbox:checked ~ &__collapse {
+     @include respond-to("large") {
+        display: block;
+     }
+  }
+
+  &__link {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.0625rem;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+    color: #1a237e !important;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0.125rem;
+      bottom: 0;
+      left: 50%;
+      background-color: $color-primary;
+      @include transition-standard;
+      transform: translateX(-50%);
+    }
+
+    &:hover, &.active {
+      color: $color-primary !important;
+      
+      &::after {
+        width: 80%;
+      }
+    }
+  }
+}
